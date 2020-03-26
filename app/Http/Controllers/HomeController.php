@@ -3,24 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Pattern\Interfaces\UserInterface as UserInterface;
 
 class HomeController extends Controller
 {
-    private $userRepository;
- 
-    public function __construct(UserInterface $userRepository)
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        $this->userRepository = $userRepository;
+        $this->middleware('auth');
     }
 
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
-        return $user = $this->userRepository->getAllPagination(5);
-    }
-    
-    public function find($id)
-    {
-        return $user = $this->userRepository->findById($id);
+        return view('home');
     }
 }
