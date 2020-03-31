@@ -175,6 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Nwidart\Menus\MenusServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
