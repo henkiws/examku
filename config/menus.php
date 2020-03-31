@@ -11,6 +11,7 @@ return [
         'navmenu' => \Nwidart\Menus\Presenters\Bootstrap\NavMenuPresenter::class,
         'adminlte' => \Nwidart\Menus\Presenters\Admin\AdminltePresenter::class,
         'zurbmenu' => \Nwidart\Menus\Presenters\Foundation\ZurbMenuPresenter::class,
+        'atlantis-lite'	=> \App\Http\Presenters\SidebarMenuAtlantisLite::class,
     ],
 
     'ordering' => false,

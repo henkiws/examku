@@ -37,7 +37,8 @@
                     </div>
                 </div>
             </div>
-            <ul class="nav nav-primary">
+            {!! Menu::render('navbar')  !!}
+            {{-- <ul class="nav nav-primary">
                 <li class="nav-item active">
                     <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                         <i class="fas fa-home"></i>
@@ -297,7 +298,7 @@
                 <li class="mx-4 mt-2">
                     <a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </div>
 </div>
